@@ -1,0 +1,80 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        palette: {
+          1: 'var(--color-palette-1)',
+          2: 'var(--color-palette-2)',
+          3: 'var(--color-palette-3)',
+          4: 'var(--color-palette-4)',
+          5: 'var(--color-palette-5)',
+        },
+        surface: 'var(--color-surface)',
+        'surface-hover': 'var(--color-surface-hover)',
+        border: 'var(--color-border)',
+        'border-hover': 'var(--color-border-hover)',
+        text: {
+          primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
+          tertiary: 'var(--color-text-tertiary)',
+        },
+        success: 'var(--color-success)',
+        warning: 'var(--color-warning)',
+        danger: 'var(--color-danger)',
+        info: 'var(--color-info)',
+      },
+      spacing: {
+        1: 'var(--space-1)',
+        2: 'var(--space-2)',
+        3: 'var(--space-3)',
+        4: 'var(--space-4)',
+        6: 'var(--space-6)',
+        8: 'var(--space-8)',
+        12: 'var(--space-12)',
+        16: 'var(--space-16)',
+        24: 'var(--space-24)',
+      },
+      borderRadius: {
+        sm: 'var(--radius-sm)',
+        md: 'var(--radius-md)',
+        lg: 'var(--radius-lg)',
+        xl: 'var(--radius-xl)',
+        full: 'var(--radius-full)',
+      },
+      boxShadow: {
+        none: 'var(--shadow-none)',
+        sm: 'var(--shadow-sm)',
+        md: 'var(--shadow-md)',
+        lg: 'var(--shadow-lg)',
+        xl: 'var(--shadow-xl)',
+      },
+      zIndex: {
+        base: 'var(--z-base)',
+        card: 'var(--z-card)',
+        dropdown: 'var(--z-dropdown)',
+        sticky: 'var(--z-sticky)',
+        overlay: 'var(--z-overlay)',
+        modal: 'var(--z-modal)',
+        toast: 'var(--z-toast)',
+      },
+      fontFamily: {
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+      },
+      fontSize: {
+        display: ['var(--text-display)', { lineHeight: '1', letterSpacing: '-0.025em', fontWeight: 'var(--font-bold)' }],
+        h1: ['var(--text-h1)', { lineHeight: '1.2', letterSpacing: '-0.020em', fontWeight: 'var(--font-bold)' }],
+        h2: ['var(--text-h2)', { lineHeight: '1.2', letterSpacing: '-0.015em', fontWeight: 'var(--font-semibold)' }],
+        h3: ['var(--text-h3)', { lineHeight: '1.3', letterSpacing: '-0.010em', fontWeight: 'var(--font-semibold)' }],
+        'body-lg': ['var(--text-body-lg)', { lineHeight: '1.5', fontWeight: 'var(--font-regular)' }],
+        body: ['var(--text-body)', { lineHeight: '1.5', fontWeight: 'var(--font-regular)' }],
+        caption: ['var(--text-caption)', { lineHeight: '1.4', letterSpacing: '0.020em', fontWeight: 'var(--font-medium)' }],
+      },
+    },
+  },
+  plugins: [],
+}
