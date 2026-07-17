@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        bg: 'var(--color-bg)',
         palette: {
           1: 'var(--color-palette-1)',
           2: 'var(--color-palette-2)',
